@@ -1,0 +1,23 @@
+.banner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position : relative ;
+    margin-bottom: 30px ;
+    img{
+        margin-top: 35px;
+        height:223px;
+        object-fit: cover;
+        border-radius: 25px;
+        width : 100%;
+        filter: brightness(60%) ;
+    }
+    h1{
+        color: #fff;
+        font-size: 48px;
+        position : absolute;
+        bottom: 18%;
+        right: 25%;
+        z-index: 10;
+    }
+}

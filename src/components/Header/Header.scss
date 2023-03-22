@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    color: #ff6060;
+    // display: flex;
+    width: 1240px;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a{
+        margin-left: 50px;
+        display: flex;
+        align-self: center;
+        font-size: 24px;
+        color : #ff6060;
+        text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+}
+.logoSVG{
+    margin-right: auto;
+    height: 68px;
+    width: 210px;
+    cursor: pointer;
+}
+
