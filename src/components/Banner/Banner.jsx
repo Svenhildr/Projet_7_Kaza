@@ -10,3 +10,4 @@ const Banner = ({ imgSRC, text }) => {
 };
 
 export default Banner;
+//

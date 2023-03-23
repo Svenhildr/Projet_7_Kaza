@@ -12,3 +12,4 @@ const Card = ({ idCard, imgCard, titleCard }) => {
 };
 
 export default Card;
+//
