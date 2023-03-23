@@ -17,6 +17,7 @@ function DropDown({ title, arrow, content }) {
           className={selectedItem ? "contentHidden" : "contentDisplayed"}
         />
       </div>
+
       <div className="dropDownContent">
         {selectedItem ? <p className="dropDownContentText">{content}</p> : ""}
       </div>

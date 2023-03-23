@@ -11,6 +11,7 @@ export default function Accomodation({ logements }) {
   const { idCard } = useParams();
 
   const logement = logements.find((logement) => logement.id === idCard);
+
   return (
     <div className="accomodationContainer">
       <DropDown
