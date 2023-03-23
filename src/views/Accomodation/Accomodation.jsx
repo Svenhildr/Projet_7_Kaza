@@ -22,7 +22,7 @@ export default function Accomodation({ logements }) {
         className="accomodationContainer"
         title="Équipement"
         arrow={arrow}
-        content={logement.equipments}
+        content={logement.equipements}
       />
     </div>
   );

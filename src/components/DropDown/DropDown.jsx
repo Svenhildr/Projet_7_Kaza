@@ -8,8 +8,8 @@ function DropDown({ title, arrow, content }) {
   };
 
   return (
-    <div className="dropDown">
-      <div className="dropDownContainer" onClick={handleDropdownChange}>
+    <div className="dropDownContainer">
+      <div className="dropDown" onClick={handleDropdownChange}>
         <h3>{title}</h3>
         <img
           src={arrow}

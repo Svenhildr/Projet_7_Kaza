@@ -9,12 +9,8 @@ export default function Header() {
       <header>
         <nav>
           <Logo />
-          <Link to="/home">
-            <a>Accueil</a>
-          </Link>
-          <Link to="/about">
-            <a>A Propos</a>
-          </Link>
+          <Link to="/home">Accueil</Link>
+          <Link to="/about">A Propos</Link>
         </nav>
       </header>
     </div>
