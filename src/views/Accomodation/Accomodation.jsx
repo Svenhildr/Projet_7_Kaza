@@ -20,7 +20,6 @@ export default function Accomodation({ logements }) {
         title="Description"
       />
       <DropDown
-        className="accomodationContainer"
         title="Équipement"
         arrow={arrow}
         content={logement.equipements}

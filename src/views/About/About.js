@@ -1,9 +1,9 @@
 import React from "react";
 import DropDown from "../../components/DropDown/DropDown";
 import arrow from "../../Assets/contentHidden.png";
-import "../../components/DropDown/DropDown.scss";
 import Banner from "../../components/Banner/Banner";
 import bannerPic from "../../Assets/photoAbout.png";
+import "../../components/DropDown/DropDown.scss";
 import "../About/About.scss";
 
 export default function About() {
@@ -36,7 +36,7 @@ export default function About() {
   return (
     <div className="containerAbout">
       <Banner imgSRC={bannerPic} />
-      {/* <div className="DropDownAbout"> */}
+      {/* <div className="DropDownAbout">  */}
       {aboutDatas.map((data, index) => {
         return (
           <DropDown
@@ -47,8 +47,8 @@ export default function About() {
           />
         );
       })}
+      {/* </div> */}
     </div>
-    // </div>
   );
 }
 //
