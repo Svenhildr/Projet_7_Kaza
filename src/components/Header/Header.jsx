@@ -9,8 +9,8 @@ export default function Header() {
       <header>
         <nav>
           <Logo />
-          <Link to="/home">Accueil</Link>
-          <Link to="/about">A Propos</Link>
+          <Link to="/home">Accueil </Link>
+          <Link to="/about">A Propos </Link>
         </nav>
       </header>
     </div>

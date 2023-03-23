@@ -34,5 +34,5 @@ export default function Home({ logements }) {
 // } else {
 //   return false;
 // }
-
+//
 // !condition && true ;
