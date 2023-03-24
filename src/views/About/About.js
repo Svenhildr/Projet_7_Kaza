@@ -36,18 +36,18 @@ export default function About() {
   return (
     <div className="containerAbout">
       <Banner imgSRC={bannerPic} />
-      {/* <div className="DropDownAbout">  */}
-      {aboutDatas.map((data, index) => {
-        return (
-          <DropDown
-            content={data.content}
-            id={index}
-            title={data.title}
-            arrow={arrow}
-          />
-        );
-      })}
-      {/* </div> */}
+      <div className="DropDownAbout">
+        {aboutDatas.map((data, index) => {
+          return (
+            <DropDown
+              content={data.content}
+              id={index}
+              title={data.title}
+              arrow={arrow}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }

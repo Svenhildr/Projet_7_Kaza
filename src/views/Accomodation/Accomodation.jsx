@@ -12,18 +12,32 @@ export default function Accomodation({ logements }) {
 
   const logement = logements.find((logement) => logement.id === idCard);
 
+  console.log(logement);
+
   return (
     <div className="accomodationContainer">
-      <DropDown
-        content={logement.description}
-        arrow={arrow}
-        title="Description"
-      />
-      <DropDown
-        title="Équipement"
-        arrow={arrow}
-        content={logement.equipements}
-      />
+      <div className="accomodationDropDown">
+        <DropDown
+          content={logement.description}
+          arrow={arrow}
+          title="Description"
+        />
+        {/* </div> */}
+        {/* <div className="accomodationDropDown"> */}
+        {/*         <DropDown
+          title="Équipement"
+          arrow={arrow}
+          content={logement.equipments}
+        /> */}
+
+        <DropDown title="Équipement" arrow={arrow}>
+          <ul>
+            {logement.equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>
+        </DropDown>
+      </div>
     </div>
   );
 }

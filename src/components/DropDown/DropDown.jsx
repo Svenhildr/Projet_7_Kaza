@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function DropDown({ title, arrow, content }) {
+function DropDown({ title, arrow, content, children }) {
   const [selectedItem, setSelectedItem] = useState(false);
 
   const handleDropdownChange = () => {
@@ -19,7 +19,14 @@ function DropDown({ title, arrow, content }) {
       </div>
 
       <div className="dropDownContent">
-        {selectedItem ? <p className="dropDownContentText">{content}</p> : ""}
+        {selectedItem ? (
+          <div className="dropDownContentText">
+            {content}
+            {children}
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
