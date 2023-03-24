@@ -3,4 +3,19 @@
     width: 1240px;
     margin: auto;
 }
-// 
+
+/* .bannerContainer{
+    // max-height: 111px;
+    max-height:223px;
+
+} */
+
+@media screen and (max-width: 768px) {
+    .Home{
+        width: 335px;
+    }
+/*     .bannerContainer{
+        height: 111px;
+    
+    } */
+}

@@ -1,6 +1,7 @@
 .banner{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     // width: 1240px;
     position : relative ;
     margin-bottom: 30px ;
@@ -21,4 +22,22 @@
         z-index: 10;
     }
 }
-//
+
+@media screen and (max-width: 768px) {
+
+    .banner{
+        position : relative ;
+    img{
+        height: 111px ;
+        border-radius: 10px;
+    }
+    h1{
+        position : absolute;
+        top: 40px;
+        left : 16px;
+        font-size: 24px;
+        overflow-wrap: break-word;
+        max-width: 190px;
+    }
+}
+}

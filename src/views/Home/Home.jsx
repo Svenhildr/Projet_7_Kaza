@@ -10,7 +10,9 @@ export default function Home({ logements }) {
 
   return (
     <div className="Home">
-      <Banner imgSRC={bannerPic} text="Chez vous, partout et ailleurs" />
+      <div className="bannerContainer">
+        <Banner imgSRC={bannerPic} text="Chez vous, partout et ailleurs" />
+      </div>
       <div className="cardContainer">
         {logements.map((logement) => {
           return (

@@ -35,7 +35,9 @@ export default function About() {
   ];
   return (
     <div className="containerAbout">
-      <Banner imgSRC={bannerPic} />
+      <div className="bannerAbout">
+        <Banner imgSRC={bannerPic} />
+      </div>
       <div className="DropDownAbout">
         {aboutDatas.map((data, index) => {
           return (

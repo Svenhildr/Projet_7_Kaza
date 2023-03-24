@@ -1,14 +1,10 @@
 .header{
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    max-width: 1240px;
+    color: #ff6060;
+
 }
 
-header{
-    color: #ff6060;
-    // display: flex;
-    width: 1240px;
-    justify-content: space-between;
-}
 nav{
     display: flex;
     flex-direction: row;
@@ -33,4 +29,20 @@ a:hover{
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+    .header{
+    max-width: 335px
+    }
+
+    .logoSVG{
+        height: 47x;
+        width: 145px;
+    }
+
+    nav a{
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-left: 10px;
+    }
+}
 // 
