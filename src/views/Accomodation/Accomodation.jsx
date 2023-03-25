@@ -1,11 +1,13 @@
 import React from "react";
 import "../Accomodation/Accomodation.scss";
+import "../../components/DropDown/DropDown.scss";
+import "../../components/Tag/Tag.scss";
 // import logements from "../../data/logements.json";
-// import Tag from "../../components/Tag/Tag";
+import Tag from "../../components/Tag/Tag";
 import DropDown from "../../components/DropDown/DropDown";
 import arrow from "../../Assets/contentHidden.png";
-import "../../components/DropDown/DropDown.scss";
 import { useParams } from "react-router-dom";
+import Rating from "../../components/Rating/Rating";
 
 export default function Accomodation({ logements }) {
   const { idCard } = useParams();
@@ -16,20 +18,26 @@ export default function Accomodation({ logements }) {
 
   return (
     <div className="accomodationContainer">
+      <div className="accomodationRating">
+        <Rating StarRating={logement.rating} />
+      </div>
+      <h1 className="logementTitle">{logement.title}</h1>
+      <p className="logementLocation">{logement.location}</p>
+      <div className="tagContainer">
+        <Tag>
+          <ul>
+            {logement.tags.map((tag, index) => (
+              <li key={index}>{tag}</li>
+            ))}
+          </ul>
+        </Tag>
+      </div>
       <div className="accomodationDropDown">
         <DropDown
           content={logement.description}
           arrow={arrow}
           title="Description"
         />
-        {/* </div> */}
-        {/* <div className="accomodationDropDown"> */}
-        {/*         <DropDown
-          title="Équipement"
-          arrow={arrow}
-          content={logement.equipments}
-        /> */}
-
         <DropDown title="Équipement" arrow={arrow}>
           <ul>
             {logement.equipments.map((equipment, index) => (
