@@ -1,5 +1,3 @@
-const filledStar = () => {
-  return (
     <svg
       width="30"
       height="30"
@@ -12,7 +10,3 @@ const filledStar = () => {
         fill="#FF6060"
       />
     </svg>
-  );
-};
-
-export default filledStar;

@@ -1,19 +1,22 @@
 import React from "react";
-import EmptyStar from "../../Assets/EmptyStar";
-import FilledStar from "../../Assets/FilledStar";
+import EmptyStar from "../../Assets/EmptyStar.svg";
+import FilledStar from "../../Assets/FilledStar.svg";
 
-const StarRating = ({ rating }) => {
-  return (
-    <div>
-      {[...Array(5)].map((rating, index) => (
-        <img
-          key={index}
-          src={index < rating ? FilledStar : EmptyStar}
-          alt={index < rating ? "filled star" : "empty star"}
-        />
-      ))}
-    </div>
-  );
-};
+function StarRating({ Rating }) {
+  const stars = [];
+
+  for (let i = 1; i <= 5; i++) {
+    stars.push(
+      <img
+        className="etoiles"
+        key={i}
+        src={i <= Rating ? FilledStar : EmptyStar}
+        alt={i <= Rating ? "Filled star" : "Empty star"}
+      />
+    );
+  }
+
+  return <div className="rating">{stars}</div>;
+}
 
 export default StarRating;

@@ -1,6 +1,4 @@
-const emptyStar = () => {
-  return (
-    <svg
+<svg
       width="30"
       height="30"
       viewBox="0 0 30 30"
@@ -12,6 +10,3 @@ const emptyStar = () => {
         fill="#E3E3E3"
       />
     </svg>
-  );
-};
-export default emptyStar;

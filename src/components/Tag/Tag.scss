@@ -1,8 +1,30 @@
-.tagContainer{
+.tagBuble{
     background-color:#FF6060;
     color : #fff;
     max-height: 25px; 
-    max-width: 115px;
+    max-width: auto;
     display: flex;
     font-size: 14px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+}
+
+.tagContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .tagBuble{
+        font-size: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
 }
