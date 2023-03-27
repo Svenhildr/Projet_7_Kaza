@@ -48,6 +48,10 @@
     margin: 20px 0 17px 0;
     gap: 10px;
 }
+.tagContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 .hostPicture{
@@ -84,7 +88,10 @@
     .hostName{
         word-wrap :break-word;
         margin : 0;
+        max-width: 62px;
+        text-align: right ;
     }
+
 
     .accomodationContainer{
     .accomodationDropDown{
