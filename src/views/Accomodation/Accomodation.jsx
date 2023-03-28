@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Accomodation/Accomodation.scss";
 import "../../components/DropDown/DropDown.scss";
 import "../../components/Tag/Tag.scss";
 import "../../components/Rating/Rating.scss";
-// import logements from "../../data/logements.json";
+import "../../components/Slider/Slider.scss";
+import data from "../../data/logements.json";
 import Tag from "../../components/Tag/Tag";
 import DropDown from "../../components/DropDown/DropDown";
 import arrow from "../../Assets/contentHidden.png";
 import { useParams } from "react-router-dom";
 import StarRating from "../../components/Rating/Rating";
+import Slider from "../../components/Slider/Slider";
 
-export default function Accomodation({ logements }) {
+export default function Accomodation() {
   const { idCard } = useParams();
+  const [logements, setLogements] = useState(data);
 
   const logement = logements.find((logement) => logement.id === idCard);
 
@@ -19,6 +22,7 @@ export default function Accomodation({ logements }) {
 
   return (
     <div className="accomodationContainer">
+      <Slider pictures={logement.pictures} alt={logement.description} />
       <div className="hostContainer">
         <div className="accomodationInfo">
           <div className="accomodationTitleTag">

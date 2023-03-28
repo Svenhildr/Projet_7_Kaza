@@ -1,4 +1,4 @@
- .accomodationContainer{
+.accomodationContainer{
 
     margin: auto;
     max-width: 1240px;
@@ -6,13 +6,16 @@
     flex-direction: column;
     color: #ff6060;
     
-    .accomodationDropDown{
-    display: flex;
-    // width: 100%;
-    gap: 60px;
-    }
     
 } 
+.accomodationDropDown{
+    display: flex;
+    width: 100%;
+    gap: 60px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: flex-start;
+}
 
 
 .accomodationInfo{
@@ -67,10 +70,12 @@
 
     .logementTitle{
         font-size: 18px;
+        max-width: 250px;
     }
 
     .logementLocation{
         font-size: 14px;
+        margin-top: 5px;
     }
     .accomodationInfo{
         display: flex;
@@ -81,6 +86,7 @@
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
+        margin-top: 18px;
     }
     .hostPicture{
         height: 32px;

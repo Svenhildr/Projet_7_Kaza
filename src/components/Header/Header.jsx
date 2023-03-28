@@ -7,9 +7,13 @@ export default function Header() {
   return (
     <header className="header">
       <nav>
-        <Logo />
-        <Link to="/home">Accueil </Link>
-        <Link to="/about">A Propos </Link>
+        <Link to="/home">
+          <Logo />
+        </Link>
+        <div className="headerNav">
+          <Link to="/home">Accueil </Link>
+          <Link to="/about">A Propos </Link>
+        </div>
       </nav>
     </header>
   );

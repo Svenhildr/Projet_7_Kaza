@@ -24,3 +24,20 @@
     }
 }
 // 
+@media screen and (max-width: 768px) {
+    .notFound{
+        h1{
+            font-size: 96px;
+        }
+        p{
+            font-size: 18px;
+            max-width: 176px;
+            margin: auto;
+            text-align: center;
+        }
+        a{
+            margin-top: 144px ;
+            font-size: 14px;
+        }
+    }
+}

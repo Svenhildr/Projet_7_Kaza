@@ -43,7 +43,7 @@ export default function About() {
           return (
             <DropDown
               content={data.content}
-              id={index}
+              key={index}
               title={data.title}
               arrow={arrow}
             />
