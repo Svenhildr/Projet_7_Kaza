@@ -7,7 +7,7 @@ import "../../components/Slider/Slider.scss";
 import data from "../../data/logements.json";
 import Tag from "../../components/Tag/Tag";
 import DropDown from "../../components/DropDown/DropDown";
-import arrow from "../../Assets/contentHidden.png";
+import arrow from "../../Assets/contentHidden.svg";
 import { useParams } from "react-router-dom";
 import StarRating from "../../components/Rating/Rating";
 import Slider from "../../components/Slider/Slider";

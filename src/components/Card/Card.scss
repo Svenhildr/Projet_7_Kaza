@@ -1,5 +1,6 @@
 .cardContainer{
     // margin: auto;
+    margin-top: 60px;
     padding-top: 55px;
     display: flex;
     justify-content: center;
@@ -53,7 +54,7 @@ h2{
 
 @media screen and (max-width: 768px) {
     .cardContainer{
-        padding-top: 0;
+        padding-top: 25px;
         gap: 20px;
         width:335px;
         margin: auto;

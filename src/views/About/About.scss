@@ -2,18 +2,25 @@
 
 margin: auto;
 max-width: 1240px;
-
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // position: absolute;
-    // gap: 70px;
-    // width:1023px;
-    
 }
+
+
+.bannerAbout{
+    height: 225px;
+    border-radius: 25px;
+    margin-bottom: 60px;
+    object-fit:scale-down ;
+    overflow: hidden;
+
+}
+
 .DropDownAbout{
     max-width: 1023px;
-    margin: auto;
+    margin: auto;    
+}
+
+.containerAbout .aboutBanner img{
+    object-fit: cover;
 }
 
 
@@ -21,9 +28,11 @@ max-width: 1240px;
     .containerAbout{
         max-width: 336px;
     }
-    .bannerAbout {
+    .aboutBanner {
+        margin-top: 10px;
         height : 223px;
     }
+
 }
 
 // containerAbout

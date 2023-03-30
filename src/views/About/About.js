@@ -1,6 +1,6 @@
 import React from "react";
 import DropDown from "../../components/DropDown/DropDown";
-import arrow from "../../Assets/contentHidden.png";
+import arrow from "../../Assets/contentHidden.svg";
 import Banner from "../../components/Banner/Banner";
 import bannerPic from "../../Assets/photoAbout.png";
 import "../../components/DropDown/DropDown.scss";
@@ -36,7 +36,7 @@ export default function About() {
   return (
     <div className="containerAbout">
       <div className="bannerAbout">
-        <Banner imgSRC={bannerPic} />
+        <Banner imgSRC={bannerPic} className="aboutBanner" />
       </div>
       <div className="DropDownAbout">
         {aboutDatas.map((data, index) => {

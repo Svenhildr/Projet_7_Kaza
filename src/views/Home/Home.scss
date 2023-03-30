@@ -4,15 +4,26 @@
     margin: auto;
 }
 
-/* .bannerContainer{
+.bannerContainer{
     // max-height: 111px;
-    max-height:223px;
+    height:223px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 25px;
 
-} */
+}
 
 @media screen and (max-width: 768px) {
     .Home{
         width: 335px;
+    }
+
+    .bannerContainer{
+        height:111px;
+        // margin-bottom: 70px;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 10px;
     }
 /*     .bannerContainer{
         height: 111px;

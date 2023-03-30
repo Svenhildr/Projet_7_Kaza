@@ -25,6 +25,7 @@
 
     img{
         max-height: 28px;
+        rotate: 0.25turn;
     }
 }
 .dropDownContent{
@@ -45,9 +46,14 @@
         
     }
 } 
+.contentDisplayed{
+    transform: rotate(.5turn) ;
+    transition: all 0.5s ease;
+}
 
 @media screen and (max-width: 768px) {
     .dropDownContainer{
+        margin-top: 20px;
         max-width: 335px;
     }
 }
