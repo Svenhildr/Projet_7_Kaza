@@ -1,69 +1,80 @@
-.sliderContainer{
-    max-width: 1240px;  
-    height: 415px;
-    display: flex;
+.sliderContainer {
+  max-width: 1240px;
+  height: 415px;
+  display: flex;
 }
-.slider{
+.slider {
+  /*   display: flex;
+  justify-content: center;
+  align-items: flex-end; */
+  margin: 20px 0;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-position: 50%;
+  background-size: cover;
+}
+.slider background-image {
+  filter: brightness(95%);
 
-    width: 100%;
-    border-radius: 25px;
-    z-index: 0;
+  //   object-fit: scale-down;
 }
-.slider background-image{
-    
-    filter: brightness(95%);
-    object-fit: cover;
-        object-fit: scale-down;
-        
-
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(10em);
+  margin: 0 20px;
 }
-.arrows{
-    display:flex;
-    justify-content: space-between;
-    translate: 0 180px;
-    margin : 0 20px
-}
-.leftArrow img{
-    height: 80px;
-    // rotate: 0.5turn;
-}
-
-.rightArrow img{
-    height: 80px;
-    rotate: 0.5turn;
-
+.leftArrow img {
+  height: 80px;
+  // rotate: 0.5turn;
 }
 
-.sliderCounter{
-color : #fff;
-display:flex;
-justify-content: center;
-align-items: flex-end;
-translate: 0 280px;
+.rightArrow img {
+  height: 80px;
+  rotate: 0.5turn;
+}
 
+.sliderCounter {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  //   align-items: flex-start;
+  translate: 0 130px;
+  p {
+    font-size: 18px;
+  }
+}
+
+.arrowHidden,
+.sliderCounterHidden {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .sliderContainer{
-        max-width: 335px;  
-        height: 255px;
-        display: flex;
+  .sliderContainer {
+    min-width: 300px;
+    width: 100%;
+    height: 255px;
+    display: flex;
+  }
+  .leftArrow img {
+    height: 20px;
+    // rotate: 0.5turn;
+  }
 
-    }
-    .leftArrow img{
-        height: 20px;
-        // rotate: 0.5turn;
-    }
-    
-    .rightArrow img{
-        height: 20px;
-    }
+  .rightArrow img {
+    height: 20px;
+  }
 
-    .sliderCounter{
-        translate: 0 180px;
-    }
+  .sliderCounter {
+    display: none;
+  }
 
-    .arrows{
-        translate: 0 130px;
-    }
+  .arrows {
+    // translate: 0 130px;
+    transform: translateY(8em);
+  }
 }

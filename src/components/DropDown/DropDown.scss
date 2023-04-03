@@ -1,59 +1,59 @@
-.dropDownContainer{
-    display: flex;
-    flex-wrap: wrap;
-    // flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    width:100%
+.dropDownContainer {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-.dropDown{
-    // position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#FF6060;
-    color : #fff;
-    width : 100%;
-    height: 47px;
-    // max-width: 1003px;
-    // width: 1003px;
-    border-radius: 10px;
-    padding: 0 10px;
-    z-index: 10;
-    margin-bottom: -15px;
+.dropDown {
+  // position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6060;
+  color: #fff;
+  width: 100%;
+  height: 47px;
+  // max-width: 1003px;
+  // width: 1003px;
+  border-radius: 10px;
+  padding: 0 10px;
+  z-index: 10;
+  margin-bottom: -15px;
 
-    img{
-        max-height: 28px;
-        rotate: 0.25turn;
-    }
+  img {
+    max-height: 28px;
+    rotate: 0.25turn;
+  }
 }
-.dropDownContent{
-    position: relative;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    background-color: #f6f6f6;
-    color:#FF6060 ;
-    width: 100%;
-    // max-width: 1003px;
-    // top: 35px;  
-    font-size : 24px;
-    padding : 15px 10px 0px 10px;
-    border-radius: 10px;
-    .dropDownContentText  li{
-        list-style: none;
-        
-    }
-} 
-.contentDisplayed{
-    transform: rotate(.5turn) ;
-    transition: all 0.5s ease;
+.dropDownContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  background-color: #f6f6f6;
+  color: #ff6060;
+  width: 100%;
+  // max-width: 1003px;
+  // top: 35px;
+  font-size: 24px;
+  padding: 15px 10px 0px 10px;
+
+  border-radius: 10px;
+  .dropDownContentText li {
+    list-style: none;
+  }
+}
+.contentDisplayed {
+  transform: rotate(0.5turn);
+  transition: all 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
-    .dropDownContainer{
-        margin-top: 20px;
-        max-width: 335px;
-    }
+  .dropDownContainer {
+    margin-top: 20px;
+    // min-width: 300px;
+  }
 }

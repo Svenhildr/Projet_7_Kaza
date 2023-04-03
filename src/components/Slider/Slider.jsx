@@ -6,16 +6,18 @@ const Slider = ({ pictures }) => {
 
   const Previous = () => {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? pictures.lenght - 1 : currentIndex - 1;
+    const newIndex = isFirstSlide ? pictures.length - 1 : currentIndex - 1;
     setcurrentIndex(newIndex);
   };
 
   const Next = () => {
-    const isLastSlide = currentIndex === pictures.lenght - 1;
+    const isLastSlide = currentIndex === pictures.length - 1;
+    // console.log(isLastSlide, pictures.length);
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setcurrentIndex(newIndex);
   };
 
+  // console.log(currentIndex);
   // const GoToSlide = slideIndex;
 
   return (
@@ -26,14 +28,28 @@ const Slider = ({ pictures }) => {
       >
         <div className="arrows">
           <div className="leftArrow">
-            <img src={arrow} alt="left Arrow" onClick={Previous} />
+            <img
+              src={arrow}
+              alt="left Arrow"
+              onClick={Previous}
+              className={pictures.length != 1 ? "leftArrow" : "arrowHidden"}
+            />
           </div>
           <div className="rightArrow">
-            <img src={arrow} alt="Right Arrow" onClick={Next} />
+            <img
+              src={arrow}
+              alt="Right Arrow"
+              onClick={Next}
+              className={pictures.length != 1 ? "rightArrow" : "arrowHidden"}
+            />
           </div>
         </div>
         <div className="sliderCounter">
-          <p>
+          <p
+            className={
+              pictures.length === 1 ? "sliderCounterHidden" : "sliderCounter"
+            }
+          >
             {currentIndex + 1} / {pictures.length}
           </p>
         </div>

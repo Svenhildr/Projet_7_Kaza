@@ -1,11 +1,13 @@
- body{
-margin: 0;
-padding: 0;
-margin-top: 40px;
- }
-// 
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  font-family: "Montserrat";
+}
+
+//
 @media screen and (max-width: 768px) {
-    body{
-        margin-top: 20px;
-    }
+  body {
+    margin-top: 20px;
+  }
 }
