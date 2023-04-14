@@ -1,5 +1,6 @@
 .header {
   margin: auto;
+  padding: 20px;
   max-width: 1240px;
   color: #ff6060;
   nav {
@@ -40,7 +41,7 @@ nav {
 @media screen and (max-width: 768px) {
   .header {
     /*     max-width: 335px;*/
-    min-width: 300px;
+    // min-width: 300px;
     margin-left: 25px;
   }
 
@@ -51,10 +52,20 @@ nav {
 
   nav .headerNav {
     gap: 10px;
+    margin-right: 20px;
+
     & a {
-      margin-right: 20px;
       font-size: 12px;
       text-transform: uppercase;
     }
+  }
+}
+@media screen and (max-width: 320px) {
+  .logoSVG {
+    height: 47px;
+    width: 100px;
+  }
+  nav a {
+    font-size: 10px;
   }
 }

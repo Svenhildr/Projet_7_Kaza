@@ -18,16 +18,16 @@ function DropDown({ title, arrow, content, children }) {
         />
       </div>
 
-      <div className="dropDownContent">
-        {selectedItem ? (
+      {selectedItem ? (
+        <div className="dropDownContent">
           <div className="dropDownContentText">
             {content}
             {children}
-          </div>
-        ) : (
-          ""
-        )}
-      </div>
+          </div>{" "}
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

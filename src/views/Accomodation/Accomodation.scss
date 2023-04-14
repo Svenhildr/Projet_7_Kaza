@@ -7,16 +7,18 @@
 }
 .accomodationDropDown {
   display: flex;
-  width: 100%;
+  width: calc(100% - 40px);
   gap: 60px;
   margin: auto;
   justify-content: space-around;
   align-items: flex-start;
+  padding: 0 20px;
 }
 
 .accomodationInfo {
   margin-top: 24px;
   display: flex;
+  padding: 20px;
   justify-content: space-between;
 }
 //
@@ -89,6 +91,7 @@
     height: 32px;
   }
   .hostName {
+    font-size: 12px;
     margin: 0;
     max-width: 62px;
     text-align: right;

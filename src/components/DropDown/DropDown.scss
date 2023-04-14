@@ -5,6 +5,7 @@
   align-items: center;
   margin-bottom: 20px;
   width: 100%;
+  // padding: 0 20px;
 }
 
 .dropDown {
@@ -27,7 +28,11 @@
     max-height: 28px;
     rotate: 0.25turn;
   }
+  h3 {
+    font-size: 24px;
+  }
 }
+
 .dropDownContent {
   position: relative;
   display: flex;
@@ -39,10 +44,14 @@
   // max-width: 1003px;
   // top: 35px;
   font-size: 24px;
-  padding: 15px 10px 0px 10px;
-
+  padding: 25px 20px 15px 20px;
   border-radius: 10px;
-  .dropDownContentText li {
+
+  .dropDownContentText ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
     list-style: none;
   }
 }
@@ -51,9 +60,21 @@
   transition: all 0.5s ease;
 }
 
+/* @keyframes arrowRotate {
+  0% {
+    transform: rotate(0.5turn);
+  }
+} */
+
 @media screen and (max-width: 768px) {
   .dropDownContainer {
     margin-top: 20px;
     // min-width: 300px;
+  }
+  .dropDown h3 {
+    font-size: 13px;
+  }
+  .dropDownContent {
+    font-size: 12px;
   }
 }
