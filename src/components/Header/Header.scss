@@ -39,11 +39,11 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  .header {
-    /*     max-width: 335px;*/
-    // min-width: 300px;
+  /*   .header {
+    max-width: 335px;
+    min-width: 300px;
     margin-left: 25px;
-  }
+  } */
 
   .logoSVG {
     height: 47x;
@@ -52,7 +52,7 @@ nav {
 
   nav .headerNav {
     gap: 10px;
-    margin-right: 20px;
+    // margin-right: 20px;
 
     & a {
       font-size: 12px;
