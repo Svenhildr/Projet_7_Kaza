@@ -21,14 +21,17 @@ nav {
     align-self: center;
     font-size: 24px;
     gap: 30px;
-    a {
-      color: #ff6060;
+    .headerNavInactive {
       text-decoration: none;
+      color: #ff6060;
     }
-  }
-  a:active {
-    text-decoration: underline;
-    cursor: pointer;
+    .headerNavActive {
+      text-decoration: underline;
+      color: #ff6060;
+    }
+    a {
+      cursor: pointer;
+    }
   }
 }
 .logoSVG {
@@ -39,12 +42,6 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  /*   .header {
-    max-width: 335px;
-    min-width: 300px;
-    margin-left: 25px;
-  } */
-
   .logoSVG {
     height: 47x;
     width: 145px;

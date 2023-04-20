@@ -1,18 +1,33 @@
 import React from "react";
 import "./Header.scss";
 import Logo from "../../Assets/Logo";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export default function Header() {
+  // const activeRoute = window.location.pathname;
   return (
     <header className="header">
       <nav>
-        <Link to="/home">
+        <Link to="/">
           <Logo />
         </Link>
         <div className="headerNav">
-          <Link to="/home">Accueil </Link>
-          <Link to="/about">A Propos </Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "headerNavActive" : "headerNavInactive"
+            }
+          >
+            Accueil
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "headerNavActive" : "headerNavInactive"
+            }
+          >
+            A Propos
+          </NavLink>
         </div>
       </nav>
     </header>

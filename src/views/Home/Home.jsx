@@ -6,8 +6,6 @@ import "../../components/Banner/banner.scss";
 import Card from "../../components/Card/Card";
 
 export default function Home({ logements }) {
-  console.log(logements);
-
   return (
     <div className="Home">
       <div className="bannerContainer">

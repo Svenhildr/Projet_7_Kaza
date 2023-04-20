@@ -1,33 +1,37 @@
-.tagBuble{
-    background-color:#FF6060;
-    color : #fff;
-    max-height: 25px; 
-    max-width: auto;
-    display: flex;
+.tagBuble {
+  background-color: #ff6060;
+  color: #fff;
+  height: 100%;
+  max-width: auto;
+  display: flex;
+  padding: 0 20px;
+  border-radius: 15px;
+  .tag {
     font-size: 14px;
-    padding: 0 20px;
-    margin-bottom: 15px;
-    border-radius: 15px;
-}
-
-.tag {
     display: flex;
     align-items: center;
+  }
 }
 
-.tagContainer{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.tagContainer {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 26px;
 }
 
 @media screen and (max-width: 768px) {
-    .tagBuble{
-        font-size: 10px;
-        text-align: center;
-        border-radius: 5px;
-        margin-bottom: 0;
-        height: 18px;
+  .tagBuble {
+    // text-align: center;
+    border-radius: 5px;
+    // margin-bottom: 0;
+    height: 19px;
+    .tag {
+      font-size: 10px;
     }
-
+  }
+  .tagContainer {
+    height: 18px;
+  }
 }
