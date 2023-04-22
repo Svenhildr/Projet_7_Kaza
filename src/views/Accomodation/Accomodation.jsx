@@ -18,7 +18,7 @@ export default function Accomodation() {
   const [logements, setLogements] = useState(data);
   const logement = logements.find((logement) => logement.id === idCard);
   if (!logement) {
-    return <Navigate to="/error" replace={<PageNotFound />} />;
+    return <Navigate to="*" replace={<PageNotFound />} />;
   } else {
     return (
       <div className="accomodationContainer">
