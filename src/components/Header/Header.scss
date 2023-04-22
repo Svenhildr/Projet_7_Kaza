@@ -7,16 +7,12 @@
     margin: auto;
   }
 }
-/* .headerNav{
-    display: flex;
-} */
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   .headerNav {
-    // margin-left: 50px;
     display: flex;
     align-self: center;
     font-size: 24px;
@@ -49,8 +45,6 @@ nav {
 
   nav .headerNav {
     gap: 10px;
-    // margin-right: 20px;
-
     & a {
       font-size: 12px;
       text-transform: uppercase;

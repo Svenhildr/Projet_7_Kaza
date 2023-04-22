@@ -4,7 +4,6 @@ import Logo from "../../Assets/Logo";
 import { NavLink, Link } from "react-router-dom";
 
 export default function Header() {
-  // const activeRoute = window.location.pathname;
   return (
     <header className="header">
       <nav>

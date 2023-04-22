@@ -23,16 +23,6 @@ export default function Home({ logements }) {
           );
         })}
       </div>
-      {/* {<DropDown timer="1234" start="début" />} */}
-      {/* Afficher toutes les card logement */}
     </div>
   );
 }
-
-// if (!condition) {
-//   return true;
-// } else {
-//   return false;
-// }
-//
-// !condition && true ;

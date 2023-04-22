@@ -1,27 +1,21 @@
 .cardContainer {
   margin: auto;
-  // min-width: 300px;
   margin-top: 60px;
   padding-top: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
-  // align-items: center;
   flex-wrap: wrap;
-  // flex-direction: row;
   background-color: #f6f6f6;
   border-radius: 25px;
   gap: 52px;
   width: 100%;
-  // max-width:1240px;
 
   .cardItem {
     display: flex;
     border-radius: 10px;
     height: 340px;
-    /*      max-width: 340px; */
     width: 340px;
-    // min-width: 300px;
     position: relative;
     cursor: pointer;
 
@@ -61,12 +55,10 @@ h2 {
   .cardContainer {
     padding-top: 25px;
     gap: 20px;
-    // max-width: 335px;
     margin: auto;
     background-color: #fff;
     .cardItem {
       width: 100%;
-      // max-width: 335px;
       height: 225px;
     }
   }

@@ -1,15 +1,12 @@
 .dropDownContainer {
   display: flex;
   flex-wrap: wrap;
-  // flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
   width: 100%;
-  // padding: 0 20px;
 }
 
 .dropDown {
-  // position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,8 +14,6 @@
   color: #fff;
   width: 100%;
   height: 47px;
-  // max-width: 1003px;
-  // width: 1003px;
   border-radius: 10px;
   padding: 0 10px;
   z-index: 10;
@@ -27,6 +22,7 @@
   img {
     max-height: 28px;
     rotate: 0.25turn;
+    margin-right: 5px;
   }
   h3 {
     font-size: 24px;
@@ -41,8 +37,6 @@
   background-color: #f6f6f6;
   color: #ff6060;
   width: 100%;
-  // max-width: 1003px;
-  // top: 35px;
   font-size: 24px;
   padding: 25px 20px 15px 20px;
   border-radius: 10px;
@@ -56,20 +50,20 @@
   }
 }
 .contentDisplayed {
+  cursor: pointer;
   transform: rotate(0.5turn);
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 
-/* @keyframes arrowRotate {
-  0% {
-    transform: rotate(0.5turn);
-  }
-} */
+.contentHidden {
+  cursor: pointer;
+  transform: rotate(0turn);
+  transition: all 0.4s ease-in-out;
+}
 
 @media screen and (max-width: 768px) {
   .dropDownContainer {
     margin-top: 20px;
-    // min-width: 300px;
   }
   .dropDown h3 {
     font-size: 13px;

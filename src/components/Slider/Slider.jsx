@@ -12,13 +12,9 @@ const Slider = ({ pictures }) => {
 
   const Next = () => {
     const isLastSlide = currentIndex === pictures.length - 1;
-    // console.log(isLastSlide, pictures.length);
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setcurrentIndex(newIndex);
   };
-
-  // console.log(currentIndex);
-  // const GoToSlide = slideIndex;
 
   return (
     <div className="sliderContainer">

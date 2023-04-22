@@ -17,15 +17,12 @@ export default function Router() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          {/* <Route index element={<Home logements={logements} />} /> */}
           <Route path="/" element={<Home logements={logements} />} />
           <Route path="/about" element={<About />} />
           <Route path="/logements/:idCard" element={<Accomodation />} />
           <Route path="*" element={<PageNotFound />} />
-          {/* <Route path="/error" element={<PageNotFound />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
-//
