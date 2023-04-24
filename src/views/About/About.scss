@@ -1,6 +1,6 @@
 .containerAbout {
   margin: auto;
-  padding: 0;
+  padding: 0 20px;
   max-width: 1240px;
 }
 
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 768px) {
   .containerAbout {
-    margin: 0 20px;
+    margin: 0;
   }
   .aboutBanner {
     margin-top: 10px;
